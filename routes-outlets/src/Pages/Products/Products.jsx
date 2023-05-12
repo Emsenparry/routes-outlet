@@ -1,7 +1,8 @@
 import React from "react";
 import { useOutlet } from "react-router-dom";
-import ProductItems from "../../Components/ProductItems";
 import { useFetch } from "../../Hooks/fetch";
+import Pagination from "../../Components/Pagination";
+import Card from "../../Components/Cards/Card";
 
 const Products = () => {
 
@@ -34,7 +35,7 @@ const ProductInfo = () => {
   return (
     <>
       <h1>Products</h1>
-      <ProductItems items={apiData} />
+      <Pagination items={apiData} childComponent={Card} childProps={{auto:"autofit"}} />
     </>
   );
 };
