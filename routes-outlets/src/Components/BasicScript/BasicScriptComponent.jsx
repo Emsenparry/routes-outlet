@@ -2,7 +2,7 @@ import React from 'react';
 
 const BasicScriptComponent = () => {
   const numbers = [5, 8, 2, 9, 1, 3, 7, 4, 6];
-  const fruits = ["kiwi", "cherry", "banana", "apple"];
+  const fruits = ["kiwi", "cherry", "banana", "apple", "orange"];
 
   // Opretter en ny array med alle elementer, der består en given test.
   const filteredNumbers = numbers.filter((number) => number > 2);
@@ -26,7 +26,7 @@ const BasicScriptComponent = () => {
   const firstEvenIndex = numbers.findIndex((number) => number % 2 === 0);
 
   // Afgør om en array indeholder et bestemt element.
-  const includesThree = numbers.includes(3);
+  const includesThree = numbers.includes(7);
 
   //eksempel på chaining sort og map
   const randomMap = fruits.sort(() => Math.random() - 0.5).map((fruit) => fruit);
